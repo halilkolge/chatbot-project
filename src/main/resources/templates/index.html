@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Bot</title>
+
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h3>Chat Bot</h3>
+            <h5 style="float: right">Welcome <span id="username"></span>!</h5>
+        </div>
+        <div id="messageArea" class="col s12">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input id="messageText" type="text" class="validate"> <label for="messageText">Message</label>
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/socket.io.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#messageArea {
+    height: 400px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #A9A9A9;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 26px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.message {
+    max-width: 80%;
+    min-height: 50px;
+    border-radius: 25px;
+    color: black;
+    font-size: 26px;
+    line-height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.incoming, .me {
+    margin: 10px;
+}
+
+.incoming .avatar, .typing .avatar {
+    background-color: #0f6ab4;
+    float: left;
+}
+
+.me .avatar {
+    background-color: #10a54a;
+    float: right;
+}
+
+.incoming .message {
+    background-color: #d7e3f0;
+    float: left;
+    margin-left: 10px;
+}
+
+.me .message {
+    background-color: #c1f3d2;
+    float: right;
+    margin-right: 10px;
+}
+
+.joined {
+    text-align: center;
+    background-color: rgb(176, 255, 229);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.left {
+    text-align: center;
+    background-color: rgb(255, 152, 174);
+    margin: 10px;
+    border-radius: 10px;
+}
+
